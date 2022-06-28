@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -173,8 +173,9 @@
 					"orientation" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 798.5, 190.0, 603.0, 92.0 ],
-					"size" : 1500000.0
+					"patching_rect" : [ 393.5, 574.0, 1127.0, 345.0 ],
+					"size" : 1500000.0,
+					"thickness" : 25.0
 				}
 
 			}
@@ -189,8 +190,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -509,12 +510,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-42",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.5, 22.0, 207.5, 47.0 ],
-					"text" : "Based on the implementation described in Computer Music Journal (2009) 33 (1): 9–18."
+					"patching_rect" : [ 20.5, 22.0, 210.0, 60.0 ],
+					"text" : "Based on the implementation described by Miranda et al. in Computer Music Journal (2009) 33 (1): 9–18."
 				}
 
 			}
@@ -550,8 +551,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 11,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -761,7 +762,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 6,
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 798.5, 190.0, 603.0, 92.0 ],
+					"patching_rect" : [ 393.5, 574.0, 1127.0, 345.0 ],
 					"ruler" : 0,
 					"selectalpha" : 80.799999999999997,
 					"selectioncolor" : [ 1.0, 0.0, 0.0, 1.0 ],
@@ -818,7 +819,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 419.5, -1.0, 50.0, 22.0 ],
+					"patching_rect" : [ 419.5, -1.0, 117.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.5 ],
@@ -1078,7 +1079,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "float", "int", "int" ],
-					"patching_rect" : [ 399.0, 430.0, 55.0, 22.0 ],
+					"patching_rect" : [ 419.5, 430.0, 55.0, 22.0 ],
 					"text" : "peak 0.5"
 				}
 
@@ -1187,7 +1188,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 149.0, 260.0, 128.0, 22.0 ],
-					"text" : "poly~ poly_synth 1500"
+					"text" : "poly~ poly_synth2 100"
 				}
 
 			}
@@ -1305,7 +1306,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-114", 0 ],
-					"midpoints" : [ 611.75, 270.0, 709.875, 270.0, 709.875, 185.0, 808.0, 185.0 ],
+					"midpoints" : [ 611.75, 270.0, 709.875, 270.0, 709.875, 185.0, 403.0, 185.0 ],
 					"source" : [ "obj-117", 0 ]
 				}
 
@@ -1427,7 +1428,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
-					"midpoints" : [ 395.5, 418.5, 408.5, 418.5 ],
+					"midpoints" : [ 395.5, 418.5, 429.0, 418.5 ],
 					"order" : 0,
 					"source" : [ "obj-30", 0 ]
 				}
@@ -1444,7 +1445,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-68", 1 ],
-					"midpoints" : [ 408.5, 460.0, 408.5, 460.0 ],
+					"midpoints" : [ 429.0, 460.0, 408.5, 460.0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -1641,7 +1642,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "poly_synth.maxpat",
+				"name" : "poly_synth2.maxpat",
 				"bootpath" : "~/GitHub/sample_trace/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
